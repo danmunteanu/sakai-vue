@@ -14,6 +14,21 @@ const router = createRouter({
                     component: () => import('@/views/Dashboard.vue')
                 },
                 {
+                    path: '/records',
+                    name: 'records',
+                    component: () => import('@/views/tabs2/Records.vue')
+                },
+                {
+                    path: '/assets',
+                    name: 'assets',
+                    component: () => import('@/views/tabs2/Assets.vue')
+                },
+                {
+                    path: '/time',
+                    name: 'time',
+                    component: () => import('@/views/tabs2/Timeline.vue')
+                },
+                {
                     path: '/uikit/formlayout',
                     name: 'formlayout',
                     component: () => import('@/views/uikit/FormLayout.vue')
